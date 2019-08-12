@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SignedInLinks from './SignedInlinks';
+import SignedOutLinks from './SignedOutlinks';
 
 const Navbar = () =>{
 	return (
 		<nav className="nav-wrapper grey darken-3">
 		<div className="container">
 			<Link to='/' className="brand-logo">Ninja</Link>
+			<SignedInLinks />
+			<SignedOutLinks />
+
 		</div>
 		</nav>
 	)
